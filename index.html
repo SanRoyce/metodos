@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="container">
+        <h1><strong>Lista de Tareas Diarias</strong></h1>
+        <p>Nueva tarea</p>
+
+        <input id="nuevaTarea" placeholder="ingresa una tarea" type="text" />
+        <br>
+        <button id="agregarTarea">Agregar</button>
+
+        <div id="contadorTareas">
+          <h3>Total Tareas: <span id="totalTarea">0</span></h3>
+          <h3>Tareas Realizadas: <span id="tareaCompletada">0</span></h3>
+        </div>
+        <div>
+          <table>
+            <thead>
+              <th>ID</th>
+              <th>Tareas</th>
+              <th>Botones</th>
+            </thead>
+            <tbody class="listaTareas">
+              <tr>
+                <td>1</td>
+                <td>Bañarme</td>
+                <td>
+                  <input onclick="templete()" type="checkbox" name="miCheck" />
+                  <button>x</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>
